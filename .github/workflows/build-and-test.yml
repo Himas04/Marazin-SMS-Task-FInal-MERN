@@ -1,0 +1,13 @@
+name:Backend Build and Test
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-test-job:
+    runs-on:ubuntu-latest
+    steps:
+      -name:CheckOut-Code
+       uses:actions/checkout@v2 
+      -name:Code iruka?
+       run:ls
+      
