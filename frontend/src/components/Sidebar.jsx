@@ -16,7 +16,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 export const Sidebar = ({ currentTab, onSelectTab, isOpen, onClose }) => {
   const { user, logout } = useAuth();
 
-  let navItems = [];
+  let navItems;
 
   if (user?.role === 'admin') {
     navItems = [

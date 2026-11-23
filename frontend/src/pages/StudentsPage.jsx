@@ -11,7 +11,6 @@ import {
   IconUsers,
   IconEye,
   IconCheckSquare,
-  IconBookOpen,
   IconDownload,
   IconPrinter,
   IconList,

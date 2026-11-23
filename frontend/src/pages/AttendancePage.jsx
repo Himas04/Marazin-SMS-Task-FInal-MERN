@@ -7,8 +7,7 @@ import {
   IconPlus, 
   IconEdit, 
   IconTrash, 
-  IconCheckSquare,
-  IconSearch 
+  IconCheckSquare 
 } from '../components/Icons.jsx';
 
 const getTodayString = () => new Date().toISOString().split('T')[0];
@@ -151,7 +150,6 @@ export const AttendancePage = () => {
   const totalRecords = attendance.length;
   const presentCount = attendance.filter((a) => a.status === 'Present').length;
   const absentCount = attendance.filter((a) => a.status === 'Absent').length;
-  const lateCount = attendance.filter((a) => a.status === 'Late').length;
   const rate = totalRecords > 0 ? Math.round((presentCount / totalRecords) * 100) : 100;
 
   return (

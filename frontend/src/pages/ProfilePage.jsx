@@ -5,14 +5,9 @@ import { useToast } from '../components/Toast.jsx';
 import { 
   IconGraduationCap, 
   IconPrinter, 
-  IconBookOpen, 
   IconCheckSquare, 
   IconLock, 
-  IconUser, 
-  IconMail, 
-  IconPhone, 
-  IconBriefcase, 
-  IconShield 
+  IconUser
 } from '../components/Icons.jsx';
 
 export const ProfilePage = () => {
@@ -20,7 +15,6 @@ export const ProfilePage = () => {
   const { addToast } = useToast();
 
   const [studentProfile, setStudentProfile] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   // Form states
   const [name, setName] = useState(user?.name || '');
@@ -41,7 +35,6 @@ export const ProfilePage = () => {
 
   const loadStudentProfile = async () => {
     try {
-      setLoading(true);
       const res = await studentsApi.getMyProfile();
       setStudentProfile(res.student);
       if (res.student?.phone) {
@@ -49,8 +42,6 @@ export const ProfilePage = () => {
       }
     } catch (err) {
       console.error('Could not load student profile:', err);
-    } finally {
-      setLoading(false);
     }
   };
 

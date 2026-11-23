@@ -13,8 +13,7 @@ import {
   IconEdit, 
   IconTrash, 
   IconBookOpen,
-  IconUsers,
-  IconCheck
+  IconUsers
 } from '../components/Icons.jsx';
 
 const INITIAL_FORM = {

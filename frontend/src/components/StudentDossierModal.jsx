@@ -5,10 +5,7 @@ import {
   IconGraduationCap, 
   IconPrinter, 
   IconCheckSquare, 
-  IconBookOpen, 
-  IconMail, 
-  IconPhone, 
-  IconAlertCircle 
+  IconBookOpen 
 } from './Icons.jsx';
 
 export const StudentDossierModal = ({ studentId, isOpen, onClose }) => {

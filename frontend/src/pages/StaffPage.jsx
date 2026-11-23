@@ -15,8 +15,7 @@ import {
   IconDownload,
   IconList,
   IconGrid,
-  IconBookOpen,
-  IconCheckSquare
+  IconBookOpen
 } from '../components/Icons.jsx';
 
 const INITIAL_FORM = {

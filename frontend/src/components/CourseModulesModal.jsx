@@ -7,7 +7,6 @@ import {
   IconPlus, 
   IconEdit, 
   IconTrash, 
-  IconCheck, 
   IconX 
 } from './Icons.jsx';
 

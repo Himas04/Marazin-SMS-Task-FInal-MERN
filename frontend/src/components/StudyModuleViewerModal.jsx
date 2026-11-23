@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Modal } from './Modal.jsx';
 import { coursesApi, attendanceApi } from '../api.js';
-import { useAuth } from '../context/AuthContext.jsx';
 import { useToast } from './Toast.jsx';
 import { 
   IconBookOpen, 
   IconCheckSquare, 
-  IconCheck, 
-  IconGraduationCap 
+  IconCheck 
 } from './Icons.jsx';
 
 export const StudyModuleViewerModal = ({ course, isOpen, onClose }) => {
-  const { user } = useAuth();
   const { addToast } = useToast();
 
   const [modules, setModules] = useState([]);
