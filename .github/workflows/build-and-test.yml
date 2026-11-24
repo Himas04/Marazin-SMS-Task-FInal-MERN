@@ -78,7 +78,7 @@ jobs:
         run: npm test
 
       - name: Docker image build
-        run: docker build -t himasmoh04/students-managment-system-himas:frontend -f frontend/Dockerfile frontend
+        run: docker build -t himasmoh04/students-managment-system-himas:frontend .
 
       - name: Docker login
         uses: docker/login-action@v3
